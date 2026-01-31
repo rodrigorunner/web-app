@@ -1,31 +1,45 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-:root {
-    --header-color: #042940;
-    --text-color: #ffffff;
-    --border-header-color: #999;
-}
-
-html, body {
-    height: 100%;
-}
-
-header {
-    background-color: var(--header-color);
-    color: var(--text-color);
-    text-align: center;
-    padding: 10px;  
+section header {
+    background-color: #182625;
+    color: #ffffff;
     margin-bottom: 10px;
+    padding: 16px;
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.5);
+    z-index: 1;
 }
 
 h1 {
-   font-size: 40px;
+    text-align: center;
+    font-size: 38px;
 }
 
+table {
+    border-collapse: collapse;
+    margin: auto auto;
+}
 
+table th, table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: center;
+}
 
+th {
+    text-transform: uppercase;
+}
 
+th, td {
+    font-size: 18px;
+}
+
+@media screen and (max-width: 780px) {
+    .xscroll {
+        overflow-x: auto;
+    }
+}
 
