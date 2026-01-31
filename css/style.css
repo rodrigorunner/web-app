@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: sans-serif;
+}
+
 section header {
     background-color: #182625;
     color: #ffffff;
@@ -40,6 +44,16 @@ th, td {
 @media screen and (max-width: 780px) {
     .xscroll {
         overflow-x: auto;
+    }
+
+    th {
+        font-size: 20px;
+    }
+
+    td {
+        font-size: 22px;
+        font-weight: 400;
+        letter-spacing: 0.1em;
     }
 }
 
