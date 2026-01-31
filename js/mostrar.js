@@ -5,14 +5,17 @@
         if(localStorage.hasOwnProperty("dados")) {
             let dadosEl = JSON.parse(localStorage.getItem("dados"))
             dadosEl.forEach(e => {
-                console.log(e)
                 cont+=`
                 <ul>
-                    <li>${e.autorEl}</li>
-                    <li>${e.tituloEL}</li>
-                    <li>${e.dataInicio}</li>
-                    <li>${e.dataFinal}</li>
+                    <li><strong>Autor:</strong> ${e.autorEl}</li>
+                    <li><strong>Título:</strong> ${e.tituloEL}</li>
+                    <li><strong>Data de início:</strong> ${e.dataInicio}</li>
+                    <li><strong>Data final:</strong> ${e.dataFinal}</li>
                 </ul>
+                <div class="btns">
+                     <button>Editar</button>
+                     <button>Deletar</button>
+                </div>
                 `
             })
             layout.innerHTML = cont
