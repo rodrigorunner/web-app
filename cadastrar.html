@@ -4,35 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Cadastrar - CoolLib</title>
+    <link rel="stylesheet" href="css/error.css">
+    <title>Document</title>
 </head>
 <body>
-    <section>
-        <header>
-            <h1>CoolLib</h1>
-            <a href="index.html">Home</a>
-        </header>
-    </section>
+    <header>
+        <h1>CoolLib</h1>
+    </header>
+
+    <h3>Cadastrar</h3>
+    <a href="index.html">Home</a>
 
     <section>
-        <p id="msg"></p>
+        <p class="msg"></p>
         <p>
-           <b>*</b> <input type="text" id="autor" name="autor" placeholder="Digite o nome do autor">
-        </p>
-        <p>
-           <b>*</b> <input type="text" id="titulo" name="titulo" placeholder="Digite o nome do título">
+            <input type="text" name="author" id="author" placeholder="Digite o nome do autor.">
         </p>
         <p>
-           <b>*</b> <input type="date" id="date-inicio" name="data-inicio">
-        </p>
-         <p>
-            <input type="date" id="date-final" name="data-final">
+            <input type="text" name="title" id="title" placeholder="Digite o título do livro.">
         </p>
         <p>
-            <button id="btn">Cadastrar</button>
+            <select name="genre" id="genre">
+                <option value="Ação">Ação</option>
+                <option value="Romance">Romance</option>
+                <option value="Policial">Policial</option>
+                <option value="Político">Político</option>
+                <option value="Auto-ajuda">Auto-ajuda</option>
+            </select>
         </p>
+        <button id="btn">Enviar</button>
     </section>
 
-    <script src="js/app.js"></script>
+    <script src="js/cadastrar.js"></script>
 </body>
 </html>

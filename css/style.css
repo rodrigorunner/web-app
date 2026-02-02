@@ -4,74 +4,7 @@
     box-sizing: border-box;
 }
 
-/* Mensagens via Javascript */
-.sucesso {
-    color: green;
-}
-
-.erro {
-    color: red;
-}
-
-/* Layout da página */
 header {
     background-color: #000;
     color: #ffffff;
-    padding: 10px;
-    margin-bottom: 16px;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
-h2 {
-    font-size: 36px;
-}
-
-a {
-    color: #ffffff;
-}
-
-ul {
-    list-style: none;
-}
-
-li {
-    border-bottom: 1px solid black;
-}
-
-ul li {
-    padding: 10px;
-}
-
-.layout {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-
-}
-
-.btns button {
-    width: 100px;
-    border: none;
-    padding: 10px;
-    font-size: 20px;
-}
-
-/* Mobile First. */
-@media(max-width: 768px) {
-    .layout {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        /* text-align: center; */
-        margin: auto auto;
-    }
-
-    ul li {
-        font-size: 24px;
-    }
-
-    .btns {
-        display: inline-block;
-        margin: 10px auto;
-    }
 }
