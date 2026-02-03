@@ -31,9 +31,11 @@ createUI = (item) => {
         
         p.appendChild(document.createTextNode(text))
         sectionEl.appendChild(p)
+    
     } else {
         alert('Digite o seu nome.')
     }
+    text.value = ''
 }
 
 /** Event Listener */
