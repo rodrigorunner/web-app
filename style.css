@@ -36,7 +36,7 @@ header {
 .main {
   text-align: center;
   margin: 16px 0;
-   border-top: 1px solid var(--color-shadow);
+  border-top: 1px solid var(--color-shadow);
   border-bottom: 2px solid var(--color-shadow);
   padding: 10px 0;
   z-index: 1;
@@ -56,10 +56,12 @@ p.item-list {
   margin: auto auto;
 }
 
-.item-list {
+p.item-list {
   border: 1px solid var(--color-two);
   font-weight: 400;
-  padding: 10px 0;
+  padding: 6px 0;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 2px var(--color-shadow);
 }
 
 button {
@@ -82,8 +84,8 @@ i.fa-list {
 }
 
 input {
- width: 600px;
- height: 30px;
+ width: 500px;
+ height: 40px;
 }
 
 i.fa-trash {
@@ -119,7 +121,7 @@ footer p {
   }
 
   p.item-list {
-    width: 360px;
+    width: 320px;
   }
 
 }
