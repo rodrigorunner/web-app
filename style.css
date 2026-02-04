@@ -103,6 +103,7 @@ footer {
   height: 200px;
   text-align: center;
   padding: 10px 0;
+  letter-spacing: 0.1em;
 }
 
 footer p {
@@ -110,6 +111,16 @@ footer p {
   font-weight: bold;
   letter-spacing: 0.1em;
 }
+
+.edit {
+  color: var(--color-five);
+}
+
+.copy {
+  font-size: 14px;
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 768px) {
   input {
      width: 300px;
