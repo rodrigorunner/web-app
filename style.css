@@ -4,60 +4,113 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 :root {
-  --header-color: #012030;
-  --text-header-color: #DAFDBA;
-  --shadow: rgba(0, 0, 0, 0.5);
-  --color-one: #9AEBA3;
-  --color-two: #45C4B0;
-  --color-three: #13678A;
+  --color-one: #011F26;
+  --color-two: #5C7373;
+  --color-three: #027368;
+  --color-four: #032612;
+  --color-five: #034001;
+  --color-shadow: rgba(0, 0, 0, 0.5);
+  --white-color: #ffffff;
 }
 
 header {
-  background-color: var(--header-color);
-  color: var(--text-header-color);
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  background-color: var(--color-one);
+  color: #ffffff;
+  padding: 12px 0;
+  text-align: center;
+  letter-spacing: 0.1em;
+  box-shadow: 4px 4px 4px var(--color-shadow);
+  z-index: 2;
+}
+
+.main {
+  text-align: center;
+  margin: 16px 0;
+   border-top: 1px solid var(--color-shadow);
+  border-bottom: 2px solid var(--color-shadow);
   padding: 10px 0;
-  box-shadow: 4px 4px 4px var(--shadow);
+  z-index: 1;
+}
+
+.landing {
+  height: inherit;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 16px;
+}
+
+li {
+  display: flex;
+  justify-content: space-around;
+  border: 1px solid var(--color-two);
+  padding: 6px 0;
+  font-size: 18px;
+  width: 600px;
+  margin: auto auto;
+}
+
+button {
+   background-color: var(--color-one);
+   margin-top: 10px;
+   border: none; 
+   width: 86px;
+   color: #ffffff;
+   font-size: 20px;
+   font-weight: 400;
+   height: 30px;
+   border-radius: 5px;
+}
+
+i.fa-list {
+  display: block;
+  font-size: 50px;
+  margin: auto auto;
+}
+
+input {
+ width: 600px;
+ height: 30px;
+}
+
+i.fa-trash {
+  color: red;
+  cursor: pointer;
+}
+
+footer {
+  background-color: var(--color-four);
+  color: var(--white-color);
+  height: 200px;
+  text-align: center;
+}
+
+footer p {
+  font-size: 20px;
+  font-weight: bold;
   letter-spacing: 0.1em;
 }
+@media screen and (max-width: 768px) {
+  input {
+     width: 300px;
+     height: 40px;
+  }
 
-i {
-  font-size: 26px;
-}
+  button {
+    height: 40px;
+  }
 
-section {
-  margin: 10px 0;
-  text-align: center;
-  font-size: 26px;
-}
+  li {
+    font-size: 24px;
+    width: 360px;
+  }
 
-form {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
 }
-
-input.form-control {
-  width: 320px;
-  margin-right: 8px;
-  height: 60px;
-}
-
-.btn {
-  background-color: black;
-  color: white;
-  font-size: 20px;
-}
-.btn:hover {
-  background-color: white;
-  color: black;
-}
-.state {
-  display: none;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-}
-
