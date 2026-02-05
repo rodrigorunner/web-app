@@ -98,6 +98,12 @@ i.fa-trash {
   font-size: 20px;
 }
 
+.message {
+  text-align: center;
+  font-size: 22px;
+  letter-spacing: 0.1em;
+}
+
 footer {
   background-color: var(--color-four);
   color: var(--white-color);
