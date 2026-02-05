@@ -6,7 +6,6 @@ isEditMode = false
 
 displayItems = () => {
     const datas = getItemsFromStorage()
-
     datas.forEach(i => addItemToDOM(i))
 }
 
@@ -17,6 +16,9 @@ onAddItemSubimit = (e) => {
     /** Validate input. */
     if(newItem === '') {
         itemInput.style.border = '2px solid #ff0000'
+        setTimeout(() => {
+            itemInput.style.border = '1px solid #011F26'
+        }, 3000)
         return 
     }
 
@@ -33,8 +35,6 @@ onAddItemSubimit = (e) => {
             return
         }
     }
-
-    
 
     btn.style.backgroundColor = '#000'
     btn.innerHTML = '+ Add'
